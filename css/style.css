@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #F1F1F1;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Lobster';
+}
+nav{
+    z-index: 99;
+}
+.active{
+    border-bottom:2px solid #018498;
+}
+#header{
+    position: fixed;
+    width: 100%;
+    box-shadow: none;
+    z-index: 99;
+}
+.banner{
+    background:linear-gradient(#100F73 ,#018498);
+}
+.banner-img{
+   padding: 20px;
+}
+.banner-heading{
+    padding-top:15vh ;
+}
+.logo{
+    width: 90px;
+}
+.btn1{
+    border-radius: 2.25rem;
+    padding: .375rem 1.75rem;
+}
+.arrow-left:after{
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 0; 
+    border-top: 20rem solid transparent;
+    border-bottom: 15rem solid transparent; 
+    border-right:20rem solid #06598A; 
+    animation: slide 2s ease-in;
+  }
+  @keyframes slide{
+      from{
+        border-right:0rem solid #06598A; 
+      }to{
+        border-right:20rem solid #06598A; 
+      }
+
+  }
+  .company{
+    padding-top:20vh;
+  }
+  .smarttrix{
+      margin-top: -270px;
+      padding-left: 70vh;
+      z-index: 999;
+  }
+  .content{
+      padding-top: 3rem;
+  }
+  .services{
+      background:url('../images/web3.jpg') no-repeat center center/cover;
+      background-attachment: fixed;
+  }
+.service{
+    background: #F1F1F1;
+    color:#111;
+    border-radius: 7px;
+    box-shadow:2px 2px 5px #111;
+    animation: kailash 1s ease-in;
+}
+.service:hover{
+    background:#100F73 ;
+    color: white;
+}
+@keyframes kailash{
+    from{
+        transform: rotateZ(180deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+
+    }
+}
+.service .service-img{
+    height: 50%;
+    width: 50%;
+
+}
+.heading{
+    position: relative;
+    margin-left: 3rem;
+    padding: 0 12px;
+    
+    color: #06598A;
+}
+.heading:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 4px;
+    background: lightseagreen;
+}
+.about-img{
+    padding:0 2rem ;
+}
+.about-con{
+    position: relative;
+    padding: 0 2rem;
+}
+.about-con h4{ 
+   color:#06598A ;
+}
+.about-con::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    background: #0F1575  ;
+    animation: slide1 2s ease-in;
+}
+@keyframes slide1{
+    from{
+        width: 100%
+    }
+    to{
+       width: 7px;
+
+    }
+}
+.activities{
+    background:url('../images/web2.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+.activity{
+    padding: 5rem 0;
+}
+.miss{
+    box-shadow:2px 2px 5px #111;
+    padding: 1rem 2rem;
+    background: #F1F1F1;
+}
+.miss:hover{
+    background:white ;
+    z-index: 10;
+}
+.miss-m{
+   margin:-2rem -1rem;
+    z-index: 1;
+}
+.miss h6{
+    font-size: 30px;
+}
+.icon{
+    font-size: 4rem;
+}
+.message-box{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 24% 77%, 10% 91%, 13% 76%, 0 77%);
+    background:white;
+    box-shadow:2px 2px 10px #111;
+}
+.footer-bg{
+    background:linear-gradient(#018498, #100F73);
+
+}
+.footer-icon i{     
+    font-size: 1.5rem;
+}
+ .contact{
+    background:linear-gradient(#100F73,#f8f8f83d),url('../images/amy-hirschi-szrJ3wjzOMg-unsplash.jpg') no-repeat center center/cover; 
+    background-attachment: fixed;
+
+}
+.contact-h1{    
+    color: #F1F1F1;
+z-index: 100;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+}
+.about{
+    position: relative;
+    background:linear-gradient(#100F73 ,#018498);
+      background-attachment: fixed;
+    height: 100vh;
+  
+  }
+  .about::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: url("../images/wave-bottom.svg");
+    height: 275px;
+  
+    
+  }
+  .about-img{
+    margin-top: -120px;
+    height: 100%;
+    width: 100%;
+  }
+  .img-con{
+    z-index: 1;
+  }
+.card1{
+    position: relative;
+    display: -ms-flexbox;
+    /* flex-direction: column; */
+    min-width: 0;
+    word-wrap: break-word;
+    /* background-color: #fff; */
+    /* background-clip: border-box; */
+    /* border: 1px solid rgba(0,0,0,.125); */
+    /* border-radius: .25rem; */
+}
+.web-content{
+    padding: 1rem 2rem;
+    background: #ffff;
+    box-shadow: 3px 3px #0F1274, -1em 0 .4em #018498;
+}
+.web-content:hover{
+    transform:scale(1.1);
+}
+.web-ser{
+border: 1px solid rgba(255, 255, 255, 0.603);
+padding: 30px 15px;
+background:rgb(255,255,255);
+color: #0F1274;
+text-align: center;
+box-shadow:2px 2px 10px #111;
+margin-top: 1rem;
+width: 100%;
+
+}
+.web-ser:hover{
+color: #ffff;
+    background:#0F1274 ;
+}
+.web-ser i{
+    font-size: 3rem;
+    padding: 1rem;
+}
+.package{
+    color: #ffff;
+    padding: 2rem 1rem;
+    border-radius: 10%;
+    background:linear-gradient(45deg,#100F73 ,#018498);
+}
+.package:hover{
+    background: #100F73;;
+    box-shadow:2px 2px 5px #111;
+
+
+}
+.choose-btn{
+    padding: 12px 2.5rem;
+    border: 1px solid transparent;
+    border-radius: 17px;
+    margin-top: -12px;
+    color: #ffff;
+    background:linear-gradient(45deg,#100F73 ,#018498);
+
+}
+
+.arrow{
+    border-radius: 50%;
+    background: red;
+    padding:3px 8px;
+    font-size: 1.5rem;
+    margin-left: -1.5rem;
+}
+.btn-b{
+    margin-top: -1.4rem;
+    color: #ffff;
+}
+.package i{
+    font-size: 4rem;
+}
+.price{
+    font-size: 1.9rem;
+}
+.ans{
+    font-size:2rem;
+}
+.why{
+    height: 100px;
+    width: 100px;
+}
+.digital{
+    height:350px;
+}
+.digital-h1{
+    padding-top: 12vh;
+    text-align: center;
+}
+.digital-flex{
+    display: flex;
+}
+.icon-section{
+    text-align: center;
+    color: #100F73;
+    font-size:2.5rem;
+}
+.input-group{
+background: linear-gradient(#0000006b,#100F73);
+margin: 12px;
+}
+.service-list{
+    margin: 5px;
+}
+.d-form .input-group{
+    padding: 1rem;
+}
+ @media(max-width:768px){
+      .content{
+        padding-top: 5rem;
+      }
+    .banner-img {
+        padding: 0px;
+    }
+     .banner-img img{
+         width: 100%;
+     } 
+     .btn1{
+        border-radius: 2.25rem;
+        padding: .375rem .75rem;
+        margin: 40px 14px;
+    }
+     .h2, h2 {
+        font-size: 1rem;
+    }
+     .text{
+         padding: 20px;
+     }
+     .arrow-left:after{
+        border-top: 18rem solid transparent;
+        border-bottom: 0rem solid transparent;
+        border-right: 26rem solid #0000006d;
+        animation: slide 2s ease-in;
+      }
+      @keyframes slide{
+        from{
+            border-right: 0rem solid #0000006d;
+        }to{
+          border-right:26rem solid #0000006d; 
+        }
+  
+    }
+      .company{
+        padding-top:2vh;
+        text-align: left;
+      }
+      .smarttrix{
+        margin-top: -10rem;
+        padding-left: 0vh;
+        
+    }
+    .banner-heading{
+        text-align: right;
+        padding: 2rem 0;
+        padding-bottom: 2rem;
+    }
+    .smarttrix h1{
+        font-size: 1rem;
+    }
+    .missions{
+       flex-direction: column;
+
+    }
+    .miss-m{
+        margin:1rem 0;
+         z-index: 1;
+     }
+     .ans {
+        font-size: 1rem;
+    }
+    .digital-flex{
+        display: inline;
+    }
+    .text-d{
+        margin-top: -200px;
+    }
+  }
+ 
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .arrow-left:after{
+        display:none;
+      }
+      .smarttrix {
+        margin-top: -10rem;
+        padding-left: 16vh;
+      }
+    
+  }
